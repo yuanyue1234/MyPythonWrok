@@ -20,9 +20,10 @@ if a:
 # 单分支语句
 # 单分支语句只会在条件为真时执行相应的代码块
 x = 10
-y = 5
-if x > y:
-    print(f"{x} 大于 {y}")
+if x % 2 ==0 :
+    print(f"偶数",x)
+if x % 2 !=0 :
+    print("奇数",x)
 
 # 双分支语句
 # 双分支语句会根据条件的真假执行不同的代码块
@@ -31,7 +32,7 @@ y = 8
 if x > y:
     print(f"{x} 大于 {y}")
 else:
-    print(f"{x} 小于等于 {y}")
+    print(f"{x} 小于或等于 {y}")
 
 
 # if elif 结构
@@ -49,6 +50,17 @@ else:
     grade = "不及格"
 
 print(f"成绩 {score} 对应的等级是：{grade}")
+
+score = 85
+match score:
+    case 90:grade = "优秀"
+    case 80:grade = "良好"
+    case 70:grade = "中等"
+    case 60:grade = "及格"
+    case _: grade = "不及格"
+
+print(f"成绩 {score} 对应的等级是：{grade}")
+
 
 #  更具年份和月份计算当月天数
 # 获取用户输入的年份和月份

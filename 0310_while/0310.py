@@ -1,9 +1,7 @@
 # 猜数字
 
 # 导入random 随机数
-
 import random
-
 random_num = random.randint(1, 100)  # 猜1-100的数字
 
 # print(random_num)
