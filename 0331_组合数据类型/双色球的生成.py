@@ -16,3 +16,4 @@ print("红色球是:")
 for i in list1:
     print(i,end=" ")
 print("蓝色球是:",list1[-1])
+print("蓝色球是:",list1[-1])
